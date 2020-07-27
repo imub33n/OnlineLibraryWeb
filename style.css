@@ -1,0 +1,169 @@
+header {
+  margin: 0;
+  float: top;
+  display: flex;
+}
+  body {
+    font-family: Arial;
+    color: white;
+    margin: 0;
+
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 0.4;
+    padding-right:5%;
+    
+  }
+  li {
+    float: right;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 36px;
+    text-decoration: none;
+    
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+    
+  }
+  .active {
+    background-color: rgb(65, 65, 65);
+    color:white;
+  }
+
+  .homeMain {
+    background-image: url("./Img/BGImg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  } 
+  .homeMain > div {
+    color: white;
+    margin-top: 5vw;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    justify-content: center;
+    font-size: 2vw;
+    margin-bottom: 0%;
+  }
+  .homeMain > div >div{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7vw;
+  }
+  .homeMain > div >h4{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.2vw;
+    padding:0 27%;
+    
+  }
+
+  .button {
+    background-color: Transparent;/* Green */
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    /* margin: 4px 2px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.button1 {
+  color: white;
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+}
+.button1:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+.button2 {
+  color: black;
+  margin: 1vw;
+  border: 2px solid #252525;
+  border-radius: 4px;
+}
+.services{
+    background-color: rgb(255, 255, 255);
+    background-size: 100% ;
+    margin: 0;
+    color:black;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.serv{
+  justify-content: center;
+  text-align: center;
+  margin:3% 10%;
+}
+.serv > p{
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: rgb(99, 99, 99);
+  font-family: "Courier New", Courier, monospace;
+}
+.servType{
+  flex-direction: row;
+  display: flex;
+  margin:0 7%;
+  justify-content: space-around;
+}
+.servt1, .servt2, .servt3{
+  margin: 3%;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.space{
+  margin: 20px;
+}
+.para{
+  font-weight: bold;
+  color: rgb(68, 68, 68);
+  margin: 1vw;
+  font-size: 1.1vw;
+  font-family: "Courier New", Courier, monospace;
+}
+.contactUs{
+  background-color: rgb(228, 228, 228);
+  margin: 0;
+  
+  color:black;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .homeMain {   
+   display: block;
+   height: 50%;
+ }
+ .homeMain a{
+  padding: 7px 18px;
+  
+ }
+}
